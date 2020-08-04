@@ -11,13 +11,13 @@ path = pathlib.Path(__file__).parent.absolute()
 with open(f'{path}\\vars.json') as f:
     data = json.load(f)
 for p in data["vars"]:
-    SERVER = p["IP"]
+    SERVER = p["ServerMACAdress"]
     PORT = int(p["PORT"])
 ADDR = (SERVER, PORT)
 FORMAT = "utf-8"
 DISCONNECT_MESSAGE = "!DISCONNECT"
 
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM)
 client.connect(ADDR)
 
 def send(msg):

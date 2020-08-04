@@ -11,7 +11,7 @@ path = pathlib.Path(__file__).parent.absolute()
 with open(f'{path}\\vars.json') as f:
     data = json.load(f)
 for p in data["vars"]:
-    SERVER = p["IP"]
+    SERVER = p["ServerMACAdress"]
     PORT = p["PORT"]
 ADDR = (SERVER, int(PORT))
 FORMAT = "utf-8"

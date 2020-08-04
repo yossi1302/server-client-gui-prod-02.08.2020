@@ -1,8 +1,8 @@
 {
     "vars" : [
         {
-            "IP" : "192.168.1.46",
-            "PORT" : "5050"
+            "ServerMACAdress":"00:bb:60:ba:c2:bd",
+            "PORT" : "3"
         }
     ]
 }
