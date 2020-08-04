@@ -17,7 +17,7 @@ ADDR = (SERVER, int(PORT))
 FORMAT = "utf-8"
 DISCONNECT_MESSAGE = "!DISCONNECT"
 
-server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
 server.bind(ADDR)
 
 def handle_client(conn, addr):
