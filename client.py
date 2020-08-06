@@ -8,21 +8,20 @@ import pathlib
 
 HEADER = 64
 path = pathlib.Path(__file__).parent.absolute()
-<<<<<<< HEAD
-with open(f'{path}/vars.json') as f:
-=======
-with open(f'{path}/vars.json', 'r') as f:
->>>>>>> 6ceefb78f4c54588f608eec55a2e52a2b2e033ae
-    data = json.load(f)
+'''
+with open(f'{path}/vars.json') as vars:
+    data = json.loads(vars)
 for p in data["vars"]:
     SERVER = p["ServerMACAdress"]
-    PORT = int(p["PORT"])
-ADDR=(SERVER, int(PORT))
+    PORT = int(p["PORT"])'''
+SERVER = "00:BB:60:BA:C2:BD"
+PORT = int(8)
+ADDR=((SERVER, PORT))
 FORMAT = "utf-8"
 DISCONNECT_MESSAGE = "!DISCONNECT"
 
 client = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM,socket.BTPROTO_RFCOMM)
-client.connect(SERVER)
+client.connect(ADDR)
 
 
 def send(msg):
