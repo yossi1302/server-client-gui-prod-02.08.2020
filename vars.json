@@ -1,7 +1,11 @@
 {
     "vars" : [
         {
+<<<<<<< HEAD
             "ServerMACAdress":"00:bb:60:ba:c2:bd",
+=======
+            "ServerMACAdress":"00:BB:60:BA:C2:BD",
+>>>>>>> 6ceefb78f4c54588f608eec55a2e52a2b2e033ae
             "PORT" : "8000"
         }
     ]
