@@ -8,7 +8,7 @@ import pathlib
 all_messages = []
 HEADER = 64
 path = pathlib.Path(__file__).parent.absolute()
-with open(f'{path}\\vars.json') as f:
+with open(f'{path}/vars.json') as f:
     data = json.load(f)
 for p in data["vars"]:
     SERVER = p["ServerMACAdress"]
