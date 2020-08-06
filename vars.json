@@ -2,7 +2,7 @@
     "vars" : [
         {
             "ServerMACAdress":"00:bb:60:ba:c2:bd",
-            "PORT" : "3"
+            "PORT" : "8000"
         }
     ]
 }
